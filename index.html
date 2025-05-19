@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catatan TheKusman Trading</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>THEKUSMAN Trading Journal</h1>
+  </header>
+  <main>
+    <form id="trade-form">
+      <label>Tanggal: <input type="date" id="date" required></label>
+      <label>Pair: <input type="text" id="pair" required></label>
+      <label>Lot: <input type="number" id="lot" step="0.01" required></label>
+      <label>Profit: <input type="number" id="profit" step="0.01" required></label>
+      <label>Loss: <input type="number" id="loss" step="0.01" required></label>
+      <label>Jumlah: <input type="number" id="jumlah" step="0.01" readonly></label>
+      <button type="submit">Simpan</button>
+    </form>
+    <section id="entries"></section>
+    <section id="summary"></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
